@@ -5,6 +5,10 @@
     font-weight: 300;
 }
 
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
 @font-face {
     font-family: 'Raleway';
     src: url('../fonts/subset-Raleway-Bold.eot');
@@ -43,4 +47,112 @@ header, section, footer {
 .main_width {
     max-width: 1055px;
     margin: 0 auto;
+}
+
+header {
+    background-color: #000000;
+    height: 40px;
+}
+
+header .logo {
+    display: block;
+    float: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 13px;
+    margin-top: 14px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+header .logo strong {
+    font-weight: 700;
+    color: #29d4b4;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav li {
+    float: left;
+    line-height: 12px;
+    width: 110px;
+    height: 40px;
+
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header nav a {
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-top: 16px;
+    display: block;
+    height: 40px;
+}
+
+header nav a, header nav a:link, header nav a:visited, header nav a:hover, header nav a:active {
+    color: #ffffff;
+}
+
+header nav .submenu {
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    width: 120px;
+    height: 95px;
+    padding-top: 15px;
+    margin-top: 12px;
+}
+
+header nav .submenu:before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #000000;
+    transform: rotate(45deg);
+    position: absolute;
+    margin: -22px 0 0 52px;
+}
+
+header nav .submenu li{
+    float: none;
+    font-size: 15px;
+    width: 100%;
+    height: 15px;
+    text-transform: none;
+    line-height: 15px;
+    text-align: left;
+    padding: 0 15px;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+header nav .submenu a {
+    font-weight: 400;
+    letter-spacing: normal;
+    height: 15px;
+    padding: 0;
+}
+
+header nav li:hover .submenu {
+    display: block;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
 }
