@@ -536,7 +536,7 @@ a.join {
 }
 
 #contact {
-    padding: 32px 0 85px 0;
+    padding: 32px 0 65px 0;
 }
 
 #contact h2{
@@ -638,4 +638,34 @@ a.send {
     text-transform: uppercase;
     border-radius: 8px;
     text-align: center;
+}
+
+footer {
+    padding-bottom: 40px;
+}
+
+.copyright {
+    font-size: 16px;
+    font-weight: 200;
+    color: #999999;
+    letter-spacing: 1px;
+}
+
+.socialIcons {
+    float: left;
+    margin-top:-13px;
+}
+
+.footerLogo {
+    float: right;
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin-top: -2px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.footerLogo strong {
+    font-weight: bold;
 }
