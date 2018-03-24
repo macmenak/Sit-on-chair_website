@@ -271,7 +271,7 @@ em {
     padding: 0 20px;
 }
 
-#hero .button {
+.button {
     display: inline-block;
     width: 265px;
     height: 52px;
@@ -281,13 +281,15 @@ em {
     background-color: #24ba9f;
     text-transform: uppercase;
     border-radius: 10px;
+    text-align: center;
 }
 
-.carousel {
+.slider {
     position: relative;
+    overflow: hidden;
 }
 
-.carousel .controls a {
+.slider .controls div {
     font-size: 78px;
     line-height: 80px;
     font-family: "Raleway", Arial, sans-serif;
@@ -298,16 +300,33 @@ em {
     top: 216px;
 }
 
-.carousel .controls a.previous {
+.slider .controls div:hover {
+    cursor: pointer;
+}
+
+.slider .controls .previous {
     left: 0;
 }
 
-.carousel .controls a.next {
+.slider .controls .next {
     right: 0;
 }
 
-.carousel .slide-1 {
+
+.slide {
     padding-top: 137px;
+}
+
+.slides {
+    width: 5000px;
+    transition: all 1s;
+}
+
+.slide {
+    list-style-type: none;
+    display: block;
+    float: left;
+    width: 1040px;
 }
 
 #products {
@@ -345,6 +364,7 @@ em {
 
 .product {
     position: relative;
+    overflow: hidden;
 }
 
 .product .title {
@@ -615,16 +635,35 @@ div[class^=col].offset {
     width: 48px;
     height: 48px;
     border: 1px solid #a6e3d3;
+    float: left;
+}
+
+.checkBox input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkBox input[type="checkbox"] + label{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #a6e3d3;
+    position: absolute;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+
+.checkBox input[type="checkbox"]:checked + label{
     background-image: url("../images/form_ok.jpg");
     background-repeat: no-repeat;
     background-position: 0px 8px;
     background-size: 90%;
-    float: left;
 }
 
 .checkLabel{
     height: 48px;
-    width: 300px;
+    max-width: 300px;
     font-size:20px;
     font-weight: 100;
     line-height: 22px;
@@ -675,4 +714,51 @@ footer {
 
 .footerLogo strong {
     font-weight: bold;
+}
+
+.product .hidden {
+    animation: hideDown 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hideDown {
+    to {
+        opacity: 0;
+        margin-top: -40px;
+    }
+}
+
+#compose {
+    padding: 32px 0 65px 0;
+}
+
+#compose h2{
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #5a5a5a;
+    margin-bottom: 45px;
+}
+
+#compose h2.right {
+    text-align: right;
+    float: right;
+}
+
+#compose h2:after {
+    content: '';
+    display: block;
+    margin-top:6px;
+    width: 240px;
+    height: 8px;
+    background-color: #24ba9f;
+}
+
+#compose input[type="text"]{
+    width: 100%;
+}
+
+#compose .checkLabel{
+    font-size: 30px;
+    line-height: 48px;
 }
