@@ -132,17 +132,21 @@ header nav a, header nav a:link, header nav a:visited, header nav a:hover, heade
     color: #ffffff;
 }
 
-header nav .submenu {
+header nav .submenu .submenu-container {
     display: none;
     position: absolute;
+}
+
+header nav .submenu .submenu-container ul {
     background-color: #000000;
+    display: block;
+    position: relative;
     width: 120px;
     height: 95px;
     padding-top: 15px;
-    margin-top: 12px;
 }
 
-header nav .submenu:before {
+header nav .submenu .submenu-container ul:before {
     content: '';
     display: block;
     width: 14px;
@@ -166,14 +170,15 @@ header nav .submenu li{
     font-weight: 400;
 }
 
-header nav .submenu a {
+header nav .submenu .submenu-container a {
     font-weight: 400;
     letter-spacing: normal;
     height: 15px;
     padding: 0;
 }
 
-header nav li:hover .submenu {
+.submenu:hover .submenu-container,
+.submenu-container:hover {
     display: block;
 }
 
