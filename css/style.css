@@ -135,6 +135,8 @@ header nav a, header nav a:link, header nav a:visited, header nav a:hover, heade
 header nav .submenu .submenu-container {
     display: none;
     position: absolute;
+    z-index: 1;
+    padding-top: 12px;
 }
 
 header nav .submenu .submenu-container ul {
