@@ -81,7 +81,7 @@
                             <div class="col-6">
                                 <h2>We really are</em></h2>
                                 <p>
-                                    Buy our chair or face despair.
+                                    Buy our chair or else...
                                 </p>
                                 <a href="#" class="button">Zobacz więcej</a>
                             </div>
@@ -182,33 +182,78 @@
             </div>
         </div>
     </section>
-    <section id="compose">
-        <div class="main_width clearfix">
-            <div class="col-4">
-                <h2>Skomponuj swoje krzesło</h2>
-                <form>
-                    <input type="text" placeholder="Wybierz rodzaj">
-                    <input type="text" placeholder="Wybierz kolor">
-                    <input type="text" placeholder="Wybierz materiał">
-                </form>
-                <div class="checkWrapper clearfix">
-                    <div class="checkBox">
-                        <input type="checkbox" id="transport">
-                        <label for="transport"></label>
+    <section class="application ">
+        <div class="main_width">
+            <section class="choice_part inline">
+                <header>
+                    <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                    <span class="green_bell"></span>
+                </header>
+
+                <div class="form">
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz rodzaj</span>
+                        <span class="list_arrow"></span>
+                        <ul data-type="chair" class="list_panel">
+                            <li data-price="100">Clair</li>
+                            <li data-price="200">Margarita</li>
+                            <li data-price="400">Selena</li>
+                        </ul>
                     </div>
-                    <div class="checkLabel">
-                        Transport
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz kolor</span>
+                        <span class="list_arrow"></span>
+                        <ul data-type="color" class="list_panel">
+                            <li data-price="0">Czerwony</li>
+                            <li data-price="50">Czarny</li>
+                            <li data-price="70">Pomarańczowy</li>
+                        </ul>
                     </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz materiał</span>
+                        <span class="list_arrow"></span>
+                        <ul data-type="pattern" class="list_panel">
+                            <li data-price="0">Tkanina</li>
+                            <li data-price="100">Skóra</li>
+                        </ul>
+                    </div>
+                    <div class="checkbox check-box">
+                        <input type="checkbox" id="transport" data-transport-price="80">
+                        <label for="transport">Transport</label>
+                    </div>
+                    <!--<div class="checkbox"></div>-->
+                    <!--<span class="list_label inline_text">Transport</span>-->
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="redChair"></div>
-            </div>
-            <div class="col-4">
-                <h2 class="right">Podsumowanie</h2>
-                <div>tabela z wyliczeniami</div>
-                <a href="#" class="button">Zamawiam</a>
-            </div>
+            </section>
+
+            <section class="image_part inline">
+                <img src="images/red_chair.png">
+            </section>
+
+            <section class="summary_part inline">
+                <header class="align_right">
+                    <h3>PODSUMOWANIE</h3>
+                    <span class="green_bell"></span>
+                </header>
+
+                <div class="summary_panel">
+                    <div class="panel_left">
+                        <h4 class="title">Twój fotel</h4>
+                        <span class="color"></span>
+                        <span class="pattern"></span>
+                        <span class="transport"></span>
+                    </div>
+                    <div class="panel_right">
+                        <h4 class="title value"></h4>
+                        <span class="color value"></span>
+                        <span class="pattern value"></span>
+                        <span class="transport value"></span>
+                    </div>
+                    <div class="sum_label">SUMA</div>
+                    <div class="sum"></div>
+                </div>
+                <a href="" class="green_button">Zamawiam</a>
+            </section>
         </div>
     </section>
     <section id="contact">
